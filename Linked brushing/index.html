@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multivariate Football Dashboard</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        .dashboard-container { display: flex; flex-direction: column; gap: 30px; }
+        #pcp-chart { width: 960px; height: 500px; }
+        #controls { margin-bottom: 10px; }
+        #matrix-chart { width: 900px; }
+        .hidden { display: none; } /* Used for SPLOM selection */
+    </style>
+</head>
+<body>
+
+<div class="dashboard-container">
+    <div>
+        <h2>Parallel Coordinates Plot (PCP)</h2>
+        <div id="pcp-chart"></div>
+    </div>
+
+    <hr/>
+
+    <div>
+        <h2>Scatterplot Matrix (SPLOM)</h2>
+        <div id="controls"><strong>Select Dimensions: </strong></div>
+        <div id="matrix-chart"></div>
+    </div>
+</div>
+
+<script src="main_l.js"></script>
+</body>
+</html>
