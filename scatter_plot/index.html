@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InfoVis - Assignment 3</title>
+    
+    <!-- Loading D3.js version 7.8.4-->
+    <script src="libs/d3-7.8.4.min.js"></script>
+    
+    <!-- Loading Bootstrap CSS -->
+    <link rel="stylesheet" href="libs/bootstrap-5.3.0-alpha3.min.css">
+
+    <!-- Loading CSS styles; use if needed -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- YOUR SOLUTION GOES HERE-->
+    InfoVis Assignment 3
+
+    <!-- Loading Bootstrap js version 5.3.0 -->
+    <script src="libs/bootstrap-5.3.0-alpha3.bundle.min.js"></script>
+</body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Scatterplot Matrix</title>
+    <script src="libs/d3-7.8.4.min.js"></script>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        #controls { margin-bottom: 20px; padding: 10px; background: #f8f9fa; border-radius: 5px; }
+        label { margin-right: 15px; cursor: pointer; }
+        circle.hidden { fill: #ccc !important; fill-opacity: 0.1; }
+    </style>
+</head>
+
+<h2>Select Variables for the Matrix</h2>
+<div id="controls"></div>
+<div id="chart"></div>
+
+<script src="main.js"></script>
+</html>
