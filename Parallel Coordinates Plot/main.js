@@ -64,7 +64,7 @@ window.onload = () => {
           .attr("stroke", d => color(d[keyColorAnchor] || 0))
           .attr("d", d => line(Array.from(keys, key => [key, d[key]])))
         .call(p => p.append("title")
-          .text(d => d.label)); // 'label' contains player names in your json
+          .text(d => d.label));
 
       // Append the vertical axis containers
       const axes = svg.append("g")
